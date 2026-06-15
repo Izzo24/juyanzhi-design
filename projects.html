@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>設計作品｜居研室內設計</title>
+  <meta name="description" content="瀏覽居研室內設計作品集，包含台北高級住宅、豪宅設計、商業空間、咖啡廳及老屋翻新等精選案件。">
+  <link rel="canonical" href="https://izzo24.github.io/juyanzhi-design/projects.html">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    /* Filter bar */
+    .filter-bar {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .filter-btn {
+      padding: .5rem 1.25rem;
+      font-size: .75rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: transparent;
+      border: 1px solid var(--stone-dark);
+      color: var(--warm-grey);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--terra);
+      border-color: var(--terra);
+      color: var(--white);
+    }
+    .project-item { display: block; }
+    .project-item.hidden { display: none; }
+
+    /* Masonry-like vary heights */
+    .project-card:nth-child(3n+1) { aspect-ratio: 3/4; }
+    .project-card:nth-child(3n+2) { aspect-ratio: 4/3; }
+    .project-card:nth-child(3n)   { aspect-ratio: 1/1; }
+    .project-grid.cols-3 .project-card.featured { aspect-ratio: unset; height: 560px; }
+  </style>
+  <link rel="icon" type="image/png" href="https://d8j0ntlcm91z4.cloudfront.net/user_3Eqjq0zwo7LwUKMWfh8ca0nVfbA/hf_20260615_095143_6e95b579-c0a8-44e9-b511-c208814eff73.png">
+  <link rel="apple-touch-icon" href="https://d8j0ntlcm91z4.cloudfront.net/user_3Eqjq0zwo7LwUKMWfh8ca0nVfbA/hf_20260615_095143_6e95b579-c0a8-44e9-b511-c208814eff73.png">
+
+<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3Eqjq0zwo7LwUKMWfh8ca0nVfbA/hf_20260615_101617_8f77705c-fb47-4507-9db1-8bc4ee51f3ec.png">
+</head>
+<body>
+
+<!-- ══ PAGE HERO ══════════════════════════════════════════════════════ -->
+<!--
+  HIGGSFIELD PROMPT (projects hero):
+  Model: nano_banana_pro
+  "Expansive luxury Taipei penthouse living room, double-height ceiling with exposed concrete, full-width floor-to-ceiling windows overlooking Taipei city skyline at golden hour, warm oak flooring, custom low modular sofa in stone grey linen, single abstract monochrome painting on textured plaster wall, architectural interior photography, 24mm tilt-shift lens, Fuji Velvia film, analog grain, dramatic natural lighting"
+  → Replace src with Higgsfield output URL
+-->
+<div class="page-hero">
+  <img
+    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
+    alt="居研室設計作品集"
+    fetchpriority="high"
+    loading="eager"
+  >
+  <div class="page-hero-content container">
+    <span class="section-label">Portfolio</span>
+    <h1>設計作品</h1>
+    <p>每個空間都是一段故事，每個案件都是一次深度對話。</p>
+  </div>
+</div>
+
+<!-- ══ PROJECTS GRID ══════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+
+    <!-- Filter buttons -->
+    <div class="filter-bar fade-in">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="residential">住宅設計</button>
+      <button class="filter-btn" data-filter="commercial">商業空間</button>
+      <button class="filter-btn" data-filter="renovation">老屋翻新</button>
+    </div>
+
+    <div class="project-grid cols-3 fade-in" id="projectGrid">
+
+      <!--
+        HIGGSFIELD PROMPT: luxury apartment living
+        Model: nano_banana_pro
+        "Luxury Taipei apartment 85 sqm living room, travertine stone accent wall, custom walnut cabinetry, cream boucle L-sofa with warm throw, polished concrete floor, sculptural pendant light in warm brass, large monstera plant, late afternoon golden light, interior architectural photography, 28mm lens, Fuji 400H, analog grain, no people"
+        → Replace src
+      -->
+      <div class="project-card project-item featured" data-cat="residential">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80" alt="仁愛路豪宅 — 現代東方極簡" loading="lazy">
+        <span class="project-card-label">住宅設計</span>
+        <div class="project-card-overlay">
+          <h3>仁愛路 85 坪豪宅</h3>
+          <p>現代東方極簡 · 台北大安 · 2024</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: master bedroom
+        Model: nano_banana_pro
+        "Minimalist Japanese-style master bedroom, Taiwan luxury condo, warm off-white linen upholstered platform bed, shoji translucent panel wall gently backlit, terrazzo side table, dried flower arrangement, 35mm lens, Kodak 400H, analog grain, morning diffused light"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="residential">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80" alt="主臥室設計 — 和紙光影" loading="lazy">
+        <span class="project-card-label">住宅設計</span>
+        <div class="project-card-overlay">
+          <h3>光影之間主臥</h3>
+          <p>日式禪意 · 台北信義 · 2024</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: kitchen and dining
+        Model: nano_banana_pro
+        "Open-plan kitchen dining area in Taipei luxury apartment, island countertop in honed black granite, warm oak cabinetry with integrated handles, pendant lights in aged brass, dining table with 6 linen-upholstered chairs, floor-to-ceiling windows with city view, architectural interior photography, 35mm, Fuji 400H, analog grain"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="residential">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="廚房餐廳開放式設計" loading="lazy">
+        <span class="project-card-label">住宅設計</span>
+        <div class="project-card-overlay">
+          <h3>開放式廚房・餐廳</h3>
+          <p>溫潤木質 · 台北松山 · 2023</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: specialty coffee shop
+        Model: nano_banana_pro
+        "Minimalist specialty coffee bar interior, Taipei, exposed raw concrete ceiling, warm oak wood bar counter, ceramic cups on floating shelf, hand-hammered copper espresso machine, terrazzo floor warm beige tones, hidden strip lighting, empty morning, 24mm, Fuji 400H grain"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="commercial">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80" alt="森精品咖啡廳設計" loading="lazy">
+        <span class="project-card-label">商業空間</span>
+        <div class="project-card-overlay">
+          <h3>森 · 精品咖啡廳</h3>
+          <p>裸感工業極簡 · 台北中山 · 2023</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: fashion boutique
+        Model: nano_banana_pro
+        "Luxury fashion boutique interior in Taipei, minimal white plaster walls, clothing hanging on bronze rail, terrazzo floor, single upholstered bench, dramatic spotlighting, fresh floral installation, glass entrance visible, architectural retail photography, 28mm, Fuji Provia, analog grain"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="commercial">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="服裝精品店設計" loading="lazy">
+        <span class="project-card-label">商業空間</span>
+        <div class="project-card-overlay">
+          <h3>時裝精品旗艦店</h3>
+          <p>奢華極簡 · 台北信義 · 2023</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: old house renovation before-after
+        Model: nano_banana_pro
+        "Beautifully renovated 30-year-old Taipei apartment, preserved original terrazzo floor with new warm oak furniture overlay, exposed brick wall carefully preserved and sealed, modern linen curtains, hand-thrown ceramic decorative objects, afternoon diffused light, 35mm documentary style, Kodak Tri-X film, organic grain"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="renovation">
+        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&q=80" alt="中山老屋翻新設計" loading="lazy">
+        <span class="project-card-label">老屋翻新</span>
+        <div class="project-card-overlay">
+          <h3>中山老公寓重生</h3>
+          <p>保留記憶，注入新生 · 台北中山 · 2022</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: home office / study
+        Model: nano_banana_pro
+        "Minimalist home study and workspace, warm walnut desk with clean surface, single articulated brass lamp, library shelves with curated books, linen Roman blind, parquet floor, calm afternoon light, 50mm, Kodak Portra 400, analog grain, no technology, organic"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="residential">
+        <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80" alt="居家書房設計" loading="lazy">
+        <span class="project-card-label">住宅設計</span>
+        <div class="project-card-overlay">
+          <h3>靜謐書房</h3>
+          <p>知識與光 · 台北大安 · 2022</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: restaurant interior
+        Model: nano_banana_pro
+        "Elegant Japanese-Taiwanese fusion restaurant interior, warm zellige tile feature wall in ivory and cream, custom pendant lights in washi paper, long warm oak banquette seating, linen napkins, hand-thrown ceramic tableware, open kitchen visible in background, atmospheric evening warm lighting, 35mm lens, Fuji 400H, analog grain"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="commercial">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="日式台菜餐廳設計" loading="lazy">
+        <span class="project-card-label">商業空間</span>
+        <div class="project-card-overlay">
+          <h3>和味台菜餐廳</h3>
+          <p>溫潤質感 · 台北大安 · 2022</p>
+        </div>
+      </div>
+
+      <!--
+        HIGGSFIELD PROMPT: bathroom
+        Model: nano_banana_pro
+        "Luxury Japanese-inspired ensuite bathroom, full-height warm grey veined marble tiles, deep freestanding soaking tub in matte white, single large window with frosted glass, aged bronze fixtures, ceramic hand basin, towels in warm linen, morning light, 50mm, Fuji 400H, analog grain"
+        → Replace src
+      -->
+      <div class="project-card project-item" data-cat="residential">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="主衛浴設計 — 大理石禪浴" loading="lazy">
+        <span class="project-card-label">住宅設計</span>
+        <div class="project-card-overlay">
+          <h3>石材禪浴主衛</h3>
+          <p>靜謐奢華 · 台北信義 · 2021</p>
+        </div>
+      </div>
+
+    </div><!-- /project-grid -->
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════════════ -->
+<div class="cta-banner">
+  <img src="https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?w=1600&q=80" alt="" loading="lazy" aria-hidden="true">
+  <div class="cta-banner-content fade-in">
+    <h2>您的空間，<br>等待一個獨特的故事</h2>
+    <p>無論規模大小，每個案件我們都全力投入。預約初次諮詢，讓設計為您的生活加分。</p>
+    <a href="contact.html" class="btn btn-primary">預約諮詢</a>
+  </div>
+</div>
+
+<script>
+// ── Filter functionality ──────────────────────────────────────────────
+document.querySelectorAll('.filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var filter = this.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+    document.querySelectorAll('.project-item').forEach(function(item) {
+      if (filter === 'all' || item.dataset.cat === filter) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  });
+});
+</script>
+<script src="shared.js"></script>
+</body>
+</html>
