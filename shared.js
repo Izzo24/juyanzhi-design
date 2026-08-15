@@ -150,8 +150,8 @@
         '</div>' +
         '<div class="footer-contact footer-col">' +
           '<h5>聯絡資訊</h5>' +
-          '<p>台北市大安區仁愛路四段 112 號 3F<br>' +
-          '<a href="tel:+886223456789">02-2345-6789</a><br>' +
+          '<p>台北市大安區<br>' +
+          '<a href="tel:+886200000000">02-0000-0000</a><br>' +
           '<a href="mailto:studio@juyanzhi.com.tw">studio@juyanzhi.com.tw</a><br><br>' +
           '週一至週六 10:00 – 18:00</p>' +
         '</div>' +
